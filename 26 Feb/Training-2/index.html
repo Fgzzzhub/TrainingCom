@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Training 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"><img src="../Training-2/assets/Logo/Logo.png" alt="" style="width: 90px" /></div>
+        <div class="icon" id="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+          </svg>
+        </div>
+        <ul style="padding-left: 0" id="list" class="hidden">
+          <li class="list"><a href="#">Home</a></li>
+          <li class="list"><a href="#">Features</a></li>
+          <li class="list"><a href="#">Community</a></li>
+          <li class="list"><a href="#">Blog</a></li>
+          <li class="list"><a href="#">Pricing</a></li>
+        </ul>
+      </header>
+      <div class="hero">
+        <div class="left">
+          <h1>Lesson And Insight</h1>
+          <h1 class="green">From 8 Years</h1>
+          <p>Where to grow your business as a photographer: site or social media?</p>
+          <button class="register"><a href="#">Register</a></button>
+        </div>
+        <div class="right">
+          <img src="../Training-2/assets/Hero/Illustration.png" alt="" />
+        </div>
+      </div>
+      <div class="our-client">
+        <h1>Our Client</h1>
+        <p>We have been working with some Fortune 500+ clients</p>
+        <div class="our-client-logo">
+          <img src="../Training-2/assets/OurClient/Logo.png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (1).png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (2).png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (3).png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (4).png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (5).png" alt="" />
+          <img src="../Training-2/assets/OurClient/Logo (6).png" alt="" />
+        </div>
+      </div>
+      <div class="manage-community">
+        <h1>Manage your entire community in a single system</h1>
+        <p>Who is Nextcent suitable for?</p>
+        <div class="manage-card-container">
+          <div class="manage-card">
+            <img src="../Training-2/assets/IconsManage/Icon.png" alt="" />
+            <h3>Membership Organisations</h3>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="manage-card">
+            <img src="../Training-2/assets/IconsManage/Icon (1).png" alt="" />
+            <h3>National Associations</h3>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="manage-card">
+            <img src="../Training-2/assets/IconsManage/Icon (2).png" alt="" />
+            <h3>Clubs And Groups</h3>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-grade">
+        <div class="pixel-left">
+          <img src="../Training-2/assets/PixelGrade/Frame 35.png" alt="" style="width: 100%" />
+        </div>
+        <div class="pixel-right">
+          <h1>The unseen of spending three years at Pixelgrade</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar
+            sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+          </p>
+          <button class="learn-more"><a href="#">Learn More</a></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const icon = document.getElementById("icon");
+      const list = document.getElementById("list");
+
+      icon.addEventListener("click", () => {
+        list.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

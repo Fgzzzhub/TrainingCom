@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: Poppins;
+  background-image: url("../assets/Decore.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 2000px;
+}
+
+.bg-image {
+  position: absolute;
+  left: 48%;
+  top: 150px;
+  width: 40%;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right ul {
+  display: flex;
+  margin-right: 40px;
+}
+
+.navbar-right ul li {
+  padding-left: 40px;
+  list-style-type: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.navbar-right ul li:hover {
+  color: orange;
+}
+
+.sign-up {
+  margin: 0 20px 0 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sign-up:hover {
+  background-color: black;
+  color: white;
+}
+
+.burger {
+  display: none;
+}
+
+.content {
+  margin-top: 20vh;
+  width: 50%;
+}
+
+.description {
+  text-align: start;
+}
+
+.find-more {
+  background-color: orange;
+  width: max-content;
+  padding: 8px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.4s;
+}
+
+.find-more:hover {
+  background-color: #181e4b;
+}
+
+.service {
+  margin-top: 350px;
+  text-align: center;
+}
+
+.container-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 260px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+  margin-top: 10px;
+}
+
+.top-destination {
+  margin-top: 200px;
+  line-height: 7px;
+  text-align: center;
+}
+
+.destination-card-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-destination {
+  margin-top: 30px;
+  width: 220px;
+  height: 300px;
+  border-radius: 24px;
+  overflow-y: hidden;
+  -webkit-box-shadow: 0px 0px 58px -28px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 58px -28px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 58px -28px rgba(0, 0, 0, 0.75);
+}
+
+.card-description {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  bottom: 90px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.card-description-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card-description-bottom {
+  display: flex;
+  justify-content: start;
+  padding: 0 0 5px 20px;
+  gap: 5px;
+}
+
+.card-destination img {
+  width: 280px;
+}
+
+.next-trip {
+  line-height: 0;
+  margin-top: 150px;
+}
+
+.next-trip span {
+  line-height: 1;
+}
+
+.next-trip h1 {
+  padding-bottom: 20px;
+}
+
+.left-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-trip img {
+  position: relative;
+  top: 57px;
+}
+
+.left-component h5 {
+  margin-left: 59px;
+  line-height: 0;
+}
+
+/* .left-component {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.left-component img {
+  position: relative;
+  top: 13px;
+}
+
+.left-component h5 {
+  grid-column-start: 2;
+}*/
+
+.left-component p {
+  font-size: 12px;
+  margin-left: 59px;
+  line-height: 0;
+}
+
+@media only screen and (max-width: 985px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .service {
+    margin: 50px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .bg-image {
+    position: static;
+    margin-right: 50px;
+    width: 500px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar-right ul {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .sign-up {
+    display: none;
+  }
+
+  .container-card {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  body {
+    background-image: none;
+  }
+
+  .container > * {
+    font-size: 0.8em;
+  }
+
+  .bg-image {
+    max-width: 350px;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-left img {
+    width: 6em;
+  }
+}
